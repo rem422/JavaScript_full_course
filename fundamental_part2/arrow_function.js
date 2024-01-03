@@ -3,7 +3,7 @@
 //     return new Date().getFullYear() - birthYear;
 // }
 
-// ARROW FUNCTION
+// ARROW FUNCTION - Great for quick one-line function. Has no this keyword.
 const calcAge3 = birthYear => new Date().getFullYear() - birthYear;
 console.log(calcAge3(2000));
 
