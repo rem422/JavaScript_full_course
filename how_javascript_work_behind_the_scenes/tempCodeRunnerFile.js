@@ -1,19 +1,3 @@
-const remmy = {
-    firstName: 'Remmy',
-    year: 2000,
-    calcAge: function() {
-        console.log(this);
-        return new Date().getFullYear() - this.year;
-    },
-    greet: () => {
-    console.log(`Hey ${this.firstName}`)
-    },
-
-    // greet: function(){
-    // console.log(`Hey ${this.firstName}`)
-    // },
-};
-remmy.greet();
 
 // const jonas = {
 //     firstName: 'Jonas',
@@ -39,17 +23,3 @@ remmy.greet();
 //     },
 // };
 // jonas.calcAge();
-
-// Arguments keyword
-const addExpr =  function(a, b) {
-    console.log(arguments);
-    return a + b;
-};
-addExpr(2, 5);
-addExpr(2, 5, 8, 12);
-
-var addArrow = (a, b) => {
-    console.log(arguments);
-    return a + b
-};
-addArrow(2, 5, 8);
